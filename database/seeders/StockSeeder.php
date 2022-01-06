@@ -16,11 +16,11 @@ class StockSeeder extends Seeder
     {
         $stocks = [
             'Jackson PLC',
-            'Yandex',
-            'JD.com',
-            'StoneCo',
-            'HDFC Bank',
-            'Zoom Holdings'
+            'Braun-Graham',
+            'Halvorson PLC',
+            'Tromp-Zemlak',
+            'Marks-Lesch',
+            'Kling-Kiehn'
         ];
 
         foreach ($stocks as $stock) {
