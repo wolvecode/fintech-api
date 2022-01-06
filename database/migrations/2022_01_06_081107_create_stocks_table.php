@@ -17,8 +17,8 @@ class CreateStocksTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->decimal('price');
-            $table->float('sell_rate');
-            $table->float('rate_change_percent')->default(0.0);
+            $table->float('rate');
+            $table->float('rate_percent')->default(0.0);
             $table->timestamps();
         });
     }

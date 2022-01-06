@@ -20,11 +20,6 @@ class StockController extends Controller
     {
         $stocks = Stock::limit(10);
 
-        if ($request->query('sort')) {
-            $sort_key = $request->query('sort');
-            $stocks = $this->sortBy($stocks, $sort_key);
-        }
-
         $stocks = $stocks->get();
         return response()->json(['data' => StockData::collection($stocks)], Response::HTTP_OK);
     }

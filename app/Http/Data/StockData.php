@@ -20,9 +20,9 @@ class StockData extends JsonResource
             'id' => $this->id,
             'attributes' => [
                 'name' => $this->name,
-                'sell_rate' => $this->sell_rate,
+                'rate' => $this->rate,
                 'price' => $this->price,
-                'rate_change_percent' => $this->rate_change_percent,
+                'rate_percent' => $this->rate_percent,
                 'created_at' => $this->created_at,
             ],
         ];

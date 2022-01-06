@@ -16,8 +16,8 @@ class StockFactory extends Factory
         return [
             'name' => $this->faker->company(),
             'price' => $this->faker->randomFloat(null, 100, 300),
-            'sell_rate' => mt_rand(1, 70),
-            'rate_change_percent' => mt_rand(2, 98),
+            'rate' => mt_rand(1, 70),
+            'rate_percent' => mt_rand(2, 98),
         ];
     }
 }
